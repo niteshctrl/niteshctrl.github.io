@@ -1,27 +1,110 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>NITESH CTRL</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="main">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a>
-                        <ul>
-                            <li><a href="https://github.com/niteshctrl/stackoverflow-tags">Stack Overflow Tag Prediction</a></li>
-                            <li><a>Used Car Price Prediction</a></li>
-                            <li><a>OCR : MNIST</a></li>
-                        </ul>
-                    
-                    </li>
-                    <li><a href="#">Gallery</a></li>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitesh Prasad's Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">CTRL+CMD<span> Develop</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="https://github.com/niteshctrl" target="_blank">Projects</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Premium Services</a></li>                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">If you think you can, YOU Can.</p>
+                <h1>Hi, I am Nitesh</h1>
+
+                <div class="hero-cta">
+                    <a href="https://www.linkedin.com/in/niteshctrl/" class="primary-cta" target="_blank">Connect</a>
+                    <a href="https://github.com/niteshctrl" class="watch-video-cta" target="_blank">
+                        <img src="/images/watch.svg" alt="Watch a video">Projects at GitHub
+                    </a>
+                </div>
             </div>
-        </header>
-    </body>
+
+            <img src="images/illustration.svg" class="hero" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Stock Market</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Computer Vision</li>                
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man Holding Phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Just for fun</h2>
+            <ul>
+                <li>
+                    <img src="images/kanu.jpeg" alt="Person">
+                    <blockquote>"His services has always exceeded my exprectations."</blockquote>
+                    <cite>- Kanhaiya Lal</cite>
+                </li>
+                <li>
+                    <img src="images/salu.jpeg" alt="Person">
+                    <blockquote>"Best service provided by Mr. Nitesh"</blockquote>
+                    <cite>- Salmaan Azam</cite>
+                </li>
+                <li>
+                    <img src="images/dinu.jpeg" alt="Person">
+                    <blockquote>"A+ class services"</blockquote>
+                    <cite>- Thiru Dinesh</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-right">
+                <h2> Locate Me</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248755.78021772037!2d80.06892708460848!3d13.04782226703819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1642229279120!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+              nav = document.querySelector('nav');
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
 </html>
